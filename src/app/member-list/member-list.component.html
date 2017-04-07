@@ -1,1 +1,11 @@
-<p>Member List Works!</p>
+<ul class="list-group" id="contact-list">
+  <li *ngFor='let member of members | async' class="list-group-item">
+    <div class="col-xs-12 col-sm-3">
+      <img src={{member.image}} class="img-responsive img-circle" />
+    </div>
+    <div class="col-xs-12 col-sm-9">
+      <span class="name">{{member.first_name}} {{member.last_name}}</span><br/>
+    </div>
+    <div class="clearfix"></div>
+  </li>
+</ul>

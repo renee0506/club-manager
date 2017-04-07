@@ -1,0 +1,11 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.name {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+ul {
+  margin-left: 20%;
+  margin-right: 20%;
+}
