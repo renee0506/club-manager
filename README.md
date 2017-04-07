@@ -1,28 +1,45 @@
 # ClubManager
+#### _Renee Mei, April 2017_
+_A web application for tracking daily calories intake_
 
+
+
+## Description
+
+The application is create for users to view and manage club membership. Users can click into each individual club member profile to view detail information of the member. Administrator can access edit functionality through click on Admin button on top. In admin mode, the user can update member profiles and delete profiles.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* `git clone https://github.com/renee0506/club-manager.git`
+* `cd meal-tracker`
+* `npm install`
+* `npm install bower -g`
+* `bower install`
+* `bower install bootstrap --save`
+* add `../bower_components/bootstrap/dist/css/bootstrap.css` under `styles` in **angular-cli.json**
+* obtain a [Firebase](www.firebase.com) API key
+* `ng g class masterFirebaseConfig` and paste firebase config in **api-keys.ts**
 
-## Code scaffolding
+## Running
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+* `ng serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Build
+## Support and contact details
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Please contact Renee Mei (meiqianye@gmail.com) with any questions, concerns, or suggestions.
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This web application uses:
+* Angular 2
+* Bower
+* NPM
+****
 
-## Running end-to-end tests
+### License
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+*This project is licensed under the MIT license.*
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2017 _**Renee Mei**_

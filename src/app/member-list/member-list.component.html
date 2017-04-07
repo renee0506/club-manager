@@ -1,10 +1,12 @@
-<ul class="nav nav-tabs" >
-  <li role="presentation" (click)="setFilter('allMembers');startAddNew = false" ><a>All Members</a></li>
-  <li role="presentation" (click)="setFilter('officers');startAddNew = false" ><a>Officers</a></li>
-  <li role="presentation" (click)="setFilter('committee');startAddNew = false" ><a>Committee</a></li>
-  <li role="presentation" (click)="setFilter('members');startAddNew = false" ><a>Members</a></li>
-  <li *ngIf="currentRoute === '/admin'" (click)="startAddNew = true; showUpdateForm = false"><a>Add New Member</a></li>
-</ul>
+<div class="row category">
+  <ul class="nav nav-tabs" >
+    <li role="presentation" (click)="setFilter('allMembers');startAddNew = false" ><a>All Members</a></li>
+    <li role="presentation" (click)="setFilter('officers');startAddNew = false" ><a>Officers</a></li>
+    <li role="presentation" (click)="setFilter('committee');startAddNew = false" ><a>Committee</a></li>
+    <li role="presentation" (click)="setFilter('members');startAddNew = false" ><a>Members</a></li>
+    <li *ngIf="currentRoute === '/admin'" (click)="startAddNew = true; showUpdateForm = false"><a>Add New Member</a></li>
+  </ul>
+</div>
 
 <div class="row">
   <div class="col-md-8">
@@ -30,7 +32,7 @@
       </li>
     </ul>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4" id="form">
     <div *ngIf="showUpdateForm">
       <app-update [selectedUser]="selectedMember" (clickSender)="showUpdateForm = !showUpdateForm"></app-update>
     </div>

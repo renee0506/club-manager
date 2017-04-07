@@ -1,4 +1,3 @@
-
 .navbar-brand {
     font-size: 24px;
 }
@@ -11,6 +10,10 @@
     background-color: #222;
     border-color: #080808;
     box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-fixed-top {
+  background-color: #222;
 }
 
 .navbar-brand.fixed-theme {
@@ -26,6 +29,7 @@
 .navbar.navbar-fixed-top.fixed-theme,
 .navbar-brand,
 .navbar-container{
+    background-color: #222;
     transition: 0.8s;
     -webkit-transition:  0.8s;
 }

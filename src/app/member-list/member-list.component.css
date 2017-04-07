@@ -4,3 +4,20 @@
     font-size: 1.7em;
     font-weight: 700;
 }
+
+.name:hover {
+  cursor: pointer;
+  color: #23536c;
+}
+
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+.list-group-item:hover {
+  background: #888888;
+}
+
+.nav-tabs li a:hover {
+  cursor: pointer;
+}
