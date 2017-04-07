@@ -1,3 +1,23 @@
-<p>
-  member-detail works!
-</p>
+<div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src= {{(memberToDisplay|async)?.image}} alt="" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>
+                            {{(memberToDisplay|async)?.first_name}} {{(memberToDisplay|async)?.last_name}}
+                        </h4>
+                        <small>{{(memberToDisplay|async)?.gender}}</small>
+                        <p>
+                            <i class="glyphicon glyphicon-envelope"></i>{{(memberToDisplay|async)?.email}}
+                            <br />
+                            <i class="glyphicon glyphicon-earphone"></i>{{(memberToDisplay|async)?.phone}}
+                        </p>
+                        <!-- Split button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
