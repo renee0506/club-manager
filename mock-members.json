@@ -1,11 +1,11 @@
-{"members": [{"first_name":"Kathy","last_name":"Hart","email":"khart0@g.co","gender":"Female","image":"https://robohash.org/autveritatisexpedita.jpg?size=100x100&set=set1","phone":"964-(999)334-1823"},
-{"first_name":"Heather","last_name":"Roberts","email":"hroberts1@pbs.org","gender":"Female","image":"https://robohash.org/velittotamdignissimos.jpg?size=100x100&set=set1","phone":"242-(771)140-9829"},
-{"first_name":"Shawn","last_name":"Kelley","email":"skelley2@mapquest.com","gender":"Male","image":"https://robohash.org/possimuslaudantiumaut.bmp?size=100x100&set=set1","phone":"970-(409)444-9454"},
-{"first_name":"Debra","last_name":"Price","email":"dprice3@fema.gov","gender":"Female","image":"https://robohash.org/velfugiataut.jpg?size=100x100&set=set1","phone":"86-(263)685-3956"},
-{"first_name":"Richard","last_name":"Owens","email":"rowens4@topsy.com","gender":"Male","image":"https://robohash.org/asperioresfugiatconsequatur.bmp?size=100x100&set=set1","phone":"55-(315)797-4935"},
-{"first_name":"Jack","last_name":"Brooks","email":"jbrooks5@cpanel.net","gender":"Male","image":"https://robohash.org/suntmaioresdolores.jpg?size=100x100&set=set1","phone":"53-(345)428-8561"},
-{"first_name":"Jimmy","last_name":"Peterson","email":"jpeterson6@51.la","gender":"Male","image":"https://robohash.org/officiislaborumiste.png?size=100x100&set=set1","phone":"86-(926)418-8338"},
-{"first_name":"Benjamin","last_name":"Greene","email":"bgreene7@marketwatch.com","gender":"Male","image":"https://robohash.org/natusestcumque.bmp?size=100x100&set=set1","phone":"57-(868)297-5889"},
-{"first_name":"Marie","last_name":"Dixon","email":"mdixon8@plala.or.jp","gender":"Female","image":"https://robohash.org/velmollitianam.png?size=100x100&set=set1","phone":"7-(923)163-9130"},
-{"first_name":"Christopher","last_name":"Kelly","email":"ckelly9@nifty.com","gender":"Male","image":"https://robohash.org/placeatipsumeius.bmp?size=100x100&set=set1","phone":"86-(684)513-5454"}]
+{"members": [{"first_name":"Kathy","last_name":"Hart","email":"khart0@g.co","role":"member","image":"https://robohash.org/autveritatisexpedita.jpg?size=100x100&set=set1","phone":"964-(999)334-1823"},
+{"first_name":"Heather","last_name":"Roberts","email":"hroberts1@pbs.org","role":"treasurer","image":"https://robohash.org/velittotamdignissimos.jpg?size=100x100&set=set1","phone":"242-(771)140-9829"},
+{"first_name":"Shawn","last_name":"Kelley","email":"skelley2@mapquest.com","role":"president","image":"https://robohash.org/possimuslaudantiumaut.bmp?size=100x100&set=set1","phone":"970-(409)444-9454"},
+{"first_name":"Debra","last_name":"Price","email":"dprice3@fema.gov","role":"secretary","image":"https://robohash.org/velfugiataut.jpg?size=100x100&set=set1","phone":"86-(263)685-3956"},
+{"first_name":"Richard","last_name":"Owens","email":"rowens4@topsy.com","role":"committee","image":"https://robohash.org/asperioresfugiatconsequatur.bmp?size=100x100&set=set1","phone":"55-(315)797-4935"},
+{"first_name":"Jack","last_name":"Brooks","email":"jbrooks5@cpanel.net","role":"member","image":"https://robohash.org/suntmaioresdolores.jpg?size=100x100&set=set1","phone":"53-(345)428-8561"},
+{"first_name":"Jimmy","last_name":"Peterson","email":"jpeterson6@51.la","role":"committee","image":"https://robohash.org/officiislaborumiste.png?size=100x100&set=set1","phone":"86-(926)418-8338"},
+{"first_name":"Benjamin","last_name":"Greene","email":"bgreene7@marketwatch.com","role":"member","image":"https://robohash.org/natusestcumque.bmp?size=100x100&set=set1","phone":"57-(868)297-5889"},
+{"first_name":"Marie","last_name":"Dixon","email":"mdixon8@plala.or.jp","role":"committee","image":"https://robohash.org/velmollitianam.png?size=100x100&set=set1","phone":"7-(923)163-9130"},
+{"first_name":"Christopher","last_name":"Kelly","email":"ckelly9@nifty.com","role":"vice president","image":"https://robohash.org/placeatipsumeius.bmp?size=100x100&set=set1","phone":"86-(684)513-5454"}]
 }

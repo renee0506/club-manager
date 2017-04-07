@@ -38,4 +38,31 @@ export class MemberService {
     var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
     memberEntryInFirebase.remove();
   }
+
+  filterMemberByRole(filterString){
+    if (filterString === "committee"){
+      return this.angularFire.database.list('/members', {
+        query: {
+          orderByChild: 'role',
+          equalTo: 'committee'
+        }
+      })
+    }else if (filterString === "members") {
+      return this.angularFire.database.list('/members', {
+        query: {
+          orderByChild: 'role',
+          equalTo: 'member'
+        }
+      })
+    }else if (filterString === "officers") {
+      return this.angularFire.database.list('/members', {
+        query: {
+          orderByChild: 'role',
+          equalTo: 'officer'
+        }
+      })
+    }else {
+      return this.angularFire.database.list('/members');
+    }
+  }
 }

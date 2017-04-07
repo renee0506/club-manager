@@ -12,13 +12,18 @@ import { Router } from '@angular/router';
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
 
-  constructor(private router: Router, private memberService: MemberService) { }
+  constructor(private router: Router, private memberService: MemberService) { };
 
   ngOnInit() {
     this.members = this.memberService.getMembers();
-  }
+  };
 
   goToDetail(clickedMember){
     this.router.navigate(["member", clickedMember.$key]);
-  }
+  };
+
+  setFilter(filterString){
+    this.members = this.memberService.filterMemberByRole(filterString);
+  };
+
 }
