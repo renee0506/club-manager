@@ -1,5 +1,5 @@
 <ul class="list-group" id="contact-list">
-  <li *ngFor='let member of members | async' class="list-group-item">
+  <li *ngFor='let member of members | async' class="list-group-item" (click)="goToDetail(member)">
     <div class="col-xs-12 col-sm-3">
       <img src={{member.image}} class="img-responsive img-circle" />
     </div>
