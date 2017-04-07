@@ -1,18 +1,42 @@
 <ul class="nav nav-tabs" >
-  <li role="presentation" (click)="setFilter('allMembers')" ><a href="#">All Members</a></li>
-  <li role="presentation" (click)="setFilter('officers')" ><a href="#">Officers</a></li>
-  <li role="presentation" (click)="setFilter('committee')" ><a href="#">Committee</a></li>
-  <li role="presentation" (click)="setFilter('members')" ><a href="#">Members</a></li>
+  <li role="presentation" (click)="setFilter('allMembers');startAddNew = false" ><a>All Members</a></li>
+  <li role="presentation" (click)="setFilter('officers');startAddNew = false" ><a>Officers</a></li>
+  <li role="presentation" (click)="setFilter('committee');startAddNew = false" ><a>Committee</a></li>
+  <li role="presentation" (click)="setFilter('members');startAddNew = false" ><a>Members</a></li>
+  <li *ngIf="currentRoute === '/admin'" (click)="startAddNew = true; showUpdateForm = false"><a>Add New Member</a></li>
 </ul>
 
-<ul class="list-group" id="contact-list">
-  <li *ngFor='let member of members | async' class="list-group-item" (click)="goToDetail(member)">
-    <div class="col-xs-12 col-sm-3">
-      <img src={{member.image}} class="img-responsive img-circle" />
+<div class="row">
+  <div class="col-md-8">
+    <ul class="list-group" id="contact-list" *ngIf="!startAddNew">
+      <li *ngFor='let member of members | async' class="list-group-item">
+        <div class="col-xs-12 col-sm-3">
+          <img src={{member.image}} class="img-responsive img-circle"  (click)="goToDetail(member)"/>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+          <span class="name"  (click)="goToDetail(member)">{{member.first_name}} {{member.last_name}}</span><br/>
+          <div *ngIf="currentRoute === '/admin'">
+              <small>{{member.role}}</small>
+              <p>
+                <i class="glyphicon glyphicon-envelope"></i>{{member.email}}
+                <br />
+                <i class="glyphicon glyphicon-earphone"></i>{{member.phone}}
+              </p>
+              <!-- Split button -->
+            <button class="btn btn-xs" name="button" (click)="showUpdateForm = true; selectedMember = member">Edit</button>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <div *ngIf="showUpdateForm">
+      <app-update [selectedUser]="selectedMember" (clickSender)="showUpdateForm = !showUpdateForm"></app-update>
     </div>
-    <div class="col-xs-12 col-sm-9">
-      <span class="name">{{member.first_name}} {{member.last_name}}</span><br/>
-    </div>
-    <div class="clearfix"></div>
-  </li>
-</ul>
+  </div>
+</div>
+
+<div *ngIf="startAddNew">
+  <app-new-member [startAddNew]="startAddNew" (clickSender)="startAddNew=false"></app-new-member>
+</div>

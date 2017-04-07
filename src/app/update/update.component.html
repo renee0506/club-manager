@@ -1,0 +1,27 @@
+<div class="form-group">
+  <label>First Name: </label>
+  <input class="form-control" placeholder = {{selectedUser.first_name}} [(ngModel)]='selectedUser.first_name' type="text">
+</div>
+<div class="form-group">
+  <label>Last Name: </label>
+  <input class="form-control" placeholder = {{selectedUser.last_name}} [(ngModel)]='selectedUser.last_name' type="text">
+</div>
+<div class="form-group">
+  <label>Position: </label>
+  <input class="form-control" placeholder = {{selectedUser.role}} [(ngModel)]='selectedUser.role' type="text">
+</div>
+<div class="form-group">
+  <label>Email: </label>
+  <input class="form-control" placeholder = {{selectedUser.email}} [(ngModel)]='selectedUser.email'type="text">
+</div>
+<div class="form-group">
+  <label>Phone: </label>
+  <input class="form-control" placeholder = {{selectedUser.phone}} [(ngModel)]='selectedUser.phone' type="text">
+</div>
+<div class="form-group">
+  <label>Avatar Url: </label>
+  <input class="form-control" placeholder = {{selectedUser.image}} [(ngModel)]='selectedUser.image' type="text">
+</div>
+<button class="btn btn-warning" (click)='beginUpdatingMember(selectedUser)'>Update</button>
+<hr>
+<button class="btn btn-danger" (click)='beginDeletingMember(selectedUser)'>Delete</button>

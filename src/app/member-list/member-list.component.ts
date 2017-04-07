@@ -11,15 +11,24 @@ import { Router } from '@angular/router';
 })
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
+  currentRoute: string;
+  startAddNew: boolean = false;
+  showUpdateForm = false;
+  selectedMember;
 
   constructor(private router: Router, private memberService: MemberService) { };
 
   ngOnInit() {
     this.members = this.memberService.getMembers();
+    this.currentRoute = this.router.url;
   };
 
   goToDetail(clickedMember){
     this.router.navigate(["member", clickedMember.$key]);
+  };
+
+  goToUpdate(clickedMember){
+    this.router.navigate(["update", clickedMember.$key]);
   };
 
   setFilter(filterString){

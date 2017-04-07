@@ -30,7 +30,7 @@ export class MemberService {
       email: localUpdatedMember.email,
       phone: localUpdatedMember.phone,
       image: localUpdatedMember.image,
-      gender: localUpdatedMember.gender
+      role: localUpdatedMember.role
     });
   }
 
